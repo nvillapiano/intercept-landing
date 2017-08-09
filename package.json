@@ -1,0 +1,15 @@
+{
+  "name": "intercept_landing",
+  "version": "1.0.0",
+  "description": "Landing page for Intercept by Donovan/Green",
+  "main": "index.js",
+  "author": "Nick Villapiano",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  }
+}

@@ -1,5 +1,5 @@
-# project-name
-Brief description of project
+# Intercept Landing Page
+Temporary landing page for Intercept NASH Study
 
 # Dependencies
 ## PHP
@@ -30,23 +30,21 @@ The flexible, fast, and secure template engine for PHP
 
 [Documentation](http://twig.sensiolabs.org/documentation)
 
-## Compass<a name="compass"></a>
-Compass is an open-source CSS Authoring Framework.
+## Gulp
+Gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.
 
-[Homepage](http://compass-style.org/)
+[Homepage](https://gulpjs.com/)
 
-[Installation](http://compass-style.org/install/)
+To use, run `gulp` from the `root` directory.
 
-To use, run `compass watch` from the `scss` directory.
+Please refer to `gulpfile.js` if you need to change anything about the configuration.
 
-Please refer to `scss/config.rb` if you need to change anything about the configuration.
-
-###To build for production
+<!-- ###To build for production
 #### Compress CSS
 `cd scss && compass compile --output-style compressed --environment production --force && cd ..`
 #### Compile Javascript to one file
 `cd js && node r.js -o build.js paths.requireLib=require include=requireLib && cd ..`
-#### Update `IS_DEV` to `false` in `index.php`.
+#### Update `IS_DEV` to `false` in `index.php`. -->
 
 # Start
 * Make sure you have all dependencies and run `composer install` from the root of your project. This will get you set up with Slim and Twig.
