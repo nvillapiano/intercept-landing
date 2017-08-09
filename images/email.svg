@@ -1,0 +1,31 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.72 23.88">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <title>email</title>
+  <g id="Page-1">
+    <g id="Desktop-Copy-3">
+      <g id="Group-2">
+        <g id="email">
+          <g id="Page-1-2" data-name="Page-1">
+            <path id="Stroke-1" class="cls-1" d="M27.26,1H2.46A1.46,1.46,0,0,0,1,2.46v19a1.46,1.46,0,0,0,1.46,1.46h24.8a1.46,1.46,0,0,0,1.46-1.46v-19A1.46,1.46,0,0,0,27.26,1Z"/>
+            <path id="Stroke-3" class="cls-2" d="M2,1.74l11.82,12.7a1.46,1.46,0,0,0,2.14,0L27.75,1.74"/>
+            <path id="Stroke-5" class="cls-2" d="M11.51,12,2,22.19"/>
+            <path id="Stroke-7" class="cls-2" d="M27.7,22.18,18.21,12"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

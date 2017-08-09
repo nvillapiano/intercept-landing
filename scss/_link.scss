@@ -1,0 +1,58 @@
+// _link.scss
+
+.link {
+    color: $white;
+    @include gotham-book();
+    font-size: 1.8rem;
+    line-height: 1.222;
+    max-width: 20rem;
+    text-align: center;
+
+    img {
+        height: 3rem;
+    }
+
+    .label {
+        text-align: left;
+        margin: 1rem 0 0 0;
+    }
+
+    .button {
+        @include gotham-medium();
+        font-size: 1.6rem;
+        line-height: 1;
+        border: 0.2rem solid $white;
+        border-radius: 0.5rem;
+        height: 5.4rem;
+        min-width: 19.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0 0;
+    }
+
+    &:nth-of-type(1) {
+
+        img {
+            height: 2.2rem;
+        }
+    }
+
+    &.phone {
+
+        .icon {
+            margin: 0 0 0.5rem 0;
+        }
+
+        .phone-number {
+            text-align: left;
+        }
+
+        .region {
+            @extend .phone-number;
+            @include gotham-book();
+            font-size: 1.4rem;
+            margin: 0 0 2rem;
+        }
+    }
+}

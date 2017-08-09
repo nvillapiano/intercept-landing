@@ -1,0 +1,24 @@
+// _footer.scss
+
+.footer {
+    @extend .header;
+    height: 7rem;
+    background: $grey53;
+    color: $footer-grey;
+
+    &:before {
+        background: $grey53;
+    }
+
+    img {
+        margin: 0 3.5rem 0 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    span {
+        font-size: 1rem;
+        position: relative;
+        z-index: 2;
+    }
+}

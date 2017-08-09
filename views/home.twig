@@ -1,7 +1,50 @@
+{% include "components/header-meta.twig" %}
 {% include "components/header.twig" %}
+    <div class="container">
+        <div class="hero">
+            <div class="copy">
+                <h1>
+                    Update Coming Soon
+                </h1>
+                <p>
+                    Thank you for visiting NASH-Study.com.
+                    <br><br>
+                    We appreciate your patience as we work to refresh our site, and encourage you to check back soon.
+                    <br><br>
+                    If you would like to learn more, please contact us by using the methods below.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/hero.png">
+            </div>
+        </div>
+        <div class="links">
+            {% include 'components/link.twig' with
+                {
+                    iconSrc: 'images/email.svg',
+                    label: 'Interested patients or general inquiries:',
+                    buttonCopy: 'General Inquiries',
+                }
+            %}
+            {% include 'components/link.twig' with
+                {
+                    iconSrc: 'images/phone.svg',
+                    isPhone: true,
+                    phoneNumber1: '+1-844-782-4278',
+                    region1: 'US and Canada',
+                    phoneNumber2: '+44-203-805-7600',
+                    region2: 'All other countries'
+                }
+            %}
+            {% include 'components/link.twig' with
+                {
+                    iconSrc: 'images/doctor.svg',
+                    label: 'Doctors interested in referring patients:',
+                    buttonCopy: 'Doctor Referrals',
+                }
+            %}
 
-<div class="container">
-  <h1>{{ title }}</h1>
-</div>
-
+        </div>
+    </div>
 {% include "components/footer.twig" %}
+{% include "components/footer-meta.twig" %}
