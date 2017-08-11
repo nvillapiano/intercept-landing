@@ -569,6 +569,7 @@ a.button:hover, a:hover.button:hover, a:active.button:hover, a:visited.button:ho
 .header img, .footer img {
   position: relative;
   z-index: 2;
+  width: 7rem;
 }
 
 .header:before, .footer:before {
@@ -587,7 +588,7 @@ a.button:hover, a:hover.button:hover, a:active.button:hover, a:visited.button:ho
     height: 5.4rem;
   }
   .header img, .footer img {
-    max-width: 15rem;
+    width: 4.9rem;
   }
 }
 
@@ -714,6 +715,11 @@ a.button:hover, a:hover.button:hover, a:active.button:hover, a:visited.button:ho
   height: 100%;
   background: #001C77;
   z-index: 1;
+}
+
+.home .container i {
+  font-style: normal;
+  white-space: nowrap;
 }
 
 @media only screen and (min-height: 750px) {
@@ -870,4 +876,4 @@ a.button:hover, a:hover.button:hover, a:active.button:hover, a:visited.button:ho
   }
 }
 
-/*# sourceMappingURL=maps/index.css.map */
+/*# sourceMappingURL=maps/style.css.map */

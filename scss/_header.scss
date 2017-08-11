@@ -15,6 +15,7 @@
     img {
         position: relative;
         z-index: 2;
+        width: 7rem;
     }
 
     &:before {
@@ -32,7 +33,7 @@
         height: 5.4rem;
 
         img {
-            max-width: 15rem;
+            width: 4.9rem;
         }
     }
 }

@@ -16,15 +16,15 @@
 <article class="link {{ isPhone ? 'phone' }}">
     <img src="{{iconSrc}}" class="icon">
     {% if isPhone %}
-        <div class="phone-number">
+        <a href="tel:{{phoneNumber1}}" class="phone-number">
             {{phoneNumber1}}
-        </div>
+        </a>
         <div class="region">
             ({{region1}})
         </div>
-        <div class="phone-number">
+        <a href="tel:{{phoneNumber2}}" class="phone-number">
             {{phoneNumber2}}
-        </div>
+        </a>
         <div class="region">
             ({{region2}})
         </div>
@@ -32,7 +32,7 @@
         <div class="label">
             {{label}}
         </div>
-        <a href="#" class="button">
+        <a href="mailto:{{email}}" class="button">
             {{buttonCopy}}
         </a>
     {% endif %}

@@ -2,21 +2,24 @@
 {% include "components/header.twig" %}
     <div class="container">
         <div class="hero">
-            <div class="copy">
-                <h1>
-                    Update Coming Soon
-                </h1>
-                <p>
-                    <span>Thank you for visiting NASH-Study.com.</span>
-                    <br><br>
-                    <span>We appreciate your patience as we work to refresh our site, and encourage you to check back soon.</span>
-                    <br><br>
-                    <span>If you would like to learn more, please contact us by using the methods below.</span>
-                </p>
-            </div>
-            <div class="image">
-                <img src="images/hero.png">
-                <img src="images/hero-mobile.png">
+            <div class="hero-wrapper">
+                <div class="copy">
+                    <h1>
+                        Update Coming Soon
+                    </h1>
+                    <p>
+                        <span>Thank you for visiting <i>NASH-Study.com</i>.</span>
+                        <br><br>
+                        <span>We appreciate your patience as we work to refresh our site, and encourage you to check back soon.</span>
+                        <br><br>
+                        <span>If you would like to learn more, please contact us by using the methods below.</span>
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="images/hero.png">
+                    <img src="images/hero-mobile.png">
+                    <img class="tall" src="images/hero-tall.jpg">
+                </div>
             </div>
         </div>
         <div class="links">
@@ -24,7 +27,8 @@
                 {
                     iconSrc: 'images/email.svg',
                     label: 'Interested patients or general inquiries:',
-                    buttonCopy: 'General Inquiries',
+                    email: 'medinfo@interceptpharma.com',
+                    buttonCopy: 'General Inquiries'
                 }
             %}
             {% include 'components/link.twig' with
@@ -41,7 +45,8 @@
                 {
                     iconSrc: 'images/doctor.svg',
                     label: 'Doctors interested in referring patients:',
-                    buttonCopy: 'Doctor Referrals',
+                    email: 'nash.fibrosis.study@interceptpharma.com',
+                    buttonCopy: 'Doctor Referrals'
                 }
             %}
 

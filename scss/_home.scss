@@ -5,16 +5,13 @@
     background: $dark-grey;
 
     .container {
-        @include defaultWidth();
 
         .hero {
-            display: flex;
-            align-items: center;
             position: relative;
-            padding: 3rem 2rem;
             // min-height: 39rem;
             min-height: calc(100vh - 37rem);
             background: $light-grey;
+            width: 100%;
 
             &:after {
                 content: '';
@@ -25,6 +22,17 @@
                 height: 100%;
                 background: $light-grey;
                 z-index: 0;
+            }
+
+            .hero-wrapper {
+                @include defaultWidth();
+                height: 100%;
+                padding: 3rem 2rem;
+                position: relative;
+                min-height: calc(100vh - 37rem);
+                display: flex;
+                align-items: center;
+                overflow-y: hidden;
             }
         }
 
@@ -51,6 +59,10 @@
                 & + img {
                     display: none;
                 }
+
+                &.tall {
+                    display: none;
+                }
             }
         }
 
@@ -58,9 +70,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @include defaultWidth();
+            width: 100%;
+            padding: 0 2rem;
             min-height: 21.5rem;
             background: $blue;
             position: relative;
+            z-index: 3;
 
             &:after {
                 content: '';
@@ -74,12 +90,54 @@
             }
         }
 
+        i {
+            font-style: normal;
+            white-space: nowrap;
+        }
+
+        @media only screen and (min-height: 750px) {
+
+            .copy {
+                max-width: 48rem;
+                //
+                max-width: calc(100% - 60rem);
+                min-width: 40rem;
+            }
+
+            .image {
+                max-width: 60rem;
+                bottom: initial;
+                top: 1rem;
+                //
+                width: 50%;
+
+                img {
+                    display: none;
+
+                    &.tall {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .copy {
+                min-width: 36rem;
+            }
+        }
+
         @media only screen and (max-width: $mobile) {
 
             .hero {
                 min-height: 46rem;
                 align-items: flex-start;
-                padding: 2rem 0;
+                padding: 0;
+
+                .hero-wrapper {
+                    min-height: 46rem;
+                }
             }
 
             .copy {
@@ -103,17 +161,18 @@
             }
 
             .image {
-                width: 69%;
+                width: 60%;
                 min-width: 23.2rem;
                 max-width: 30rem;
+                top: initial;
                 bottom: 0;
                 right: -2rem;
 
                 img {
-                    display: none;
+                    display: none !important;
 
-                    & + img {
-                        display: block;
+                    &:nth-of-type(2) {
+                        display: block !important;
                     }
                 }
             }
@@ -121,6 +180,17 @@
             .links {
                 flex-direction: column;
                 padding: 2.5rem 2rem;
+            }
+        }
+
+        @media only screen and (max-width: 320px) {
+
+            .copy {
+                min-width: 31rem;
+            }
+
+            .image {
+                right: -3rem;
             }
         }
     }

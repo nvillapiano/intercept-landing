@@ -55,5 +55,12 @@ a, a:hover, a:active, a:visited, a:link {
     &.button {
         color: $white;
         text-decoration: none;
+        transition: all 0.2s;
+
+        &:hover {
+            background: $teal;
+            color: $blue;
+            border-color: $teal;
+        }
     }
 }
